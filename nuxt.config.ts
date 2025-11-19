@@ -11,7 +11,6 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxt/eslint',
     '@nuxt/fonts',
-    '@nuxt/icon',
     '@nuxt/image',
     '@pinia/nuxt',
     '@nuxtjs/color-mode'
@@ -34,7 +33,6 @@ export default defineNuxtConfig({
         output: {
           manualChunks: {
             'vendor-vue': ['vue', 'vue-router'],
-            'vendor-nuxt': ['nuxt']
           }
         }
       },
