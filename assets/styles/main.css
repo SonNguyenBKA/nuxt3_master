@@ -1,0 +1,16 @@
+/**
+ * Main Styles
+ * Import các file CSS khác và định nghĩa global styles
+ */
+
+@import './variables.scss';
+@import './theme.css';
+@import './theme-transition.css';
+@import "./tailwind.css";
+
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

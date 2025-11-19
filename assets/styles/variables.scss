@@ -1,0 +1,103 @@
+:root {
+  //  height
+  --height-header: 6rem;
+  --height-footer: 5.3125rem;
+
+  //  width
+  --width-content: 23.4375rem;
+
+  // color
+  --Black: #000;
+
+  --Text-Default-Primary: #38383D;
+  --Text-Default-Secondary: #64646D;
+  --Text-Default-Tertiary: #808089;
+
+  --Text-Inverse-Primary: #FFF;
+  --Text-Inverse-Secondary: #DDDDE3;
+  --Text-Inverse-Tertiary: #A6A6B0;
+
+  --Text-Disabled-Primary: #FFF;
+  --Text-Disabled-Tertiary: #C4C4CF;
+  --Text-Disabled-Secondary: #EBEBF0;
+
+  --Text-Brand-Primary: #08387A;
+  --Text-Brand-Secondary: #0B489D;
+  --Text-Brand-Over: #1F2956;
+  --Text-Brand-Tertiary: #E3F2FE;
+
+  --Text-Neutral-Primary: #808089;
+  --Text-Neutral-Secondary: #A6A6B0;
+  --Text-Neutral-Tertiary: #C4C4CF;
+
+  --Text-Red-Primary: #FF424E;
+  --Text-Red-Tertiary: #FFF0F1;
+
+  --Text-Green-Tertiary: #F0FDF5;
+  --Text-Green-Primary: #1FC86E;
+
+  --Text-Yellow-Tertiary: #FEFEE8;
+  --Text-Yellow-Primary: #F9B700;
+
+  --Upload-Text-Default: #575961;
+
+
+
+  // background
+  --Background-Default-Primary: #FFF;
+  --Background-Default-Secondary: #F9F9FB;
+  --Background-Default-Tertiary: #F5F6FB;
+
+  --Background-Inverse-Tertiary: #515158;
+
+  --Background-Disabled-Primary: #DDDDE3;
+  --Background-Disabled-Tertiary: #F9F9FB;
+
+  --Background-Brand-Primary: #08387A;
+  --Background-Brand-Secondary: #0B489D;
+  --Background-Brand-Tertiary: #E3F2FE;
+
+  --Background-Red-Primary: #FF424E;
+  --Background-Red-Over: #D93843;
+  --Background-Red-Tertiary: #FFF0F1;
+
+  --Background-Green-Tertiary: #F0FDF5;
+  --Background-Green-Primary: #1FC86E;
+
+  --Background-Yellow-Tertiary: #FEFEE8;
+  --Background-Yellow-Primary: #F9B700;
+
+  --Background-Neutral-Secondary: #EBEBF0;
+  --Background-Neutral-Primary: #F9F9FB;
+
+  --Overlay-Dark-4: rgba(0, 0, 0, 0.04);
+  --Overlay-Dark-8: rgba(0, 0, 0, 0.08);
+  --Overlay-Dark-20: rgba(0, 0, 0, 0.20);
+  --Overlay-Dark-40: rgba(0, 0, 0, 0.40);
+
+  --Overlay-Light-20: rgba(255, 255, 255, 0.20);
+  --Overlay-Light-40: rgba(255, 255, 255, 0.40);
+
+
+  --Accent: #FABC43;
+  --Accent-Over: #FCAC10;
+
+
+  // border
+  --Border-Default-Secondary: #EBEBF0;
+  --Border-Default-Tertiary: #DDDDE3;
+  --Border-Default-Primary: #F9F9FB;
+
+  --Border-Neutral-Primary: #64646D;
+  --Border-Neutral-Secondary: #A6A6B0;
+
+  --Border-Disabled-Primary: #DDDDE3;
+
+  --Border-Brand-Primary: #6597DC;
+  --Border-Brand-Tertiary: #E3F2FE;
+
+  --Border-Red-Primary: #FF424E;
+
+  --Border-Disabled-Secondary: #EBEBF0;
+
+}

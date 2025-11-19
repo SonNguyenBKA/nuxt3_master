@@ -1,0 +1,29 @@
+/**
+ * View Transition API cho Theme Transition
+ * Sử dụng View Transition API (giống lightswind.com/components/toggle-theme)
+ * 
+ * View Transition API tự động tạo ::view-transition-old và ::view-transition-new
+ * để tạo transition mượt mà giữa các state
+ */
+
+/* Smooth transition cho toàn bộ page khi theme change */
+html {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Đảm bảo body cũng có transition */
+body {
+  transition: background-color 0.3s ease;
+}
+
+/* View Transition API - Root transition */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in-out;
+}
+
+/* Đảm bảo view transition hoạt động tốt */
+@view-transition {
+  navigation: auto;
+}
