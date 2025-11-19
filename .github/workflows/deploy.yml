@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout repo
         uses: actions/checkout@v4
 
       - name: Setup Node.js
@@ -22,13 +22,19 @@ jobs:
         with:
           node-version: 18
 
-      - name: Install dependencies
-        run: npm install
+      - name: Clean npm cache
+        run: npm cache clean --force
 
-      - name: Build Nuxt 3 (Static)
+      - name: Install deps
+        run: npm ci --include=optional
+
+      - name: Rebuild native modules
+        run: npm rebuild
+
+      - name: Build Nuxt 3 static
         run: npm run generate
 
-      - name: Upload static site
+      - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: .output/public
@@ -40,6 +46,6 @@ jobs:
       name: github-pages
 
     steps:
-      - name: Deploy to GitHub Pages
+      - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
