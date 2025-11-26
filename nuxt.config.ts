@@ -81,12 +81,12 @@ export default defineNuxtConfig({
       meta: [
         { name: 'naive-ui-style' }
       ],
+      title: process.env.TITLE || 'Nuxt 3 Master',
       link: [
         { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
         { rel: 'alternate icon', type: 'image/x-icon', href: '/favicon.svg' }
       ]
     },
-    baseURL: '/nuxt3_master/'
   },
   postcss: {
     plugins: {
@@ -96,7 +96,7 @@ export default defineNuxtConfig({
   },
   ssr: false,
   devServer: {
-    port: 1000,
+    port: Number(process.env.PORT) || 1000,
     host: '0.0.0.0'
   },
 
@@ -104,6 +104,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     // Private keys (chỉ có ở server-side)
     apiSecret: process.env.API_SECRET,
+    isDevMode: process.env.DEV_MODE === 'true',
     
     // Public keys (có thể truy cập từ client-side)
     public: {

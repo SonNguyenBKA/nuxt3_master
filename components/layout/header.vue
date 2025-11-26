@@ -74,7 +74,13 @@ const menus = ref<MenuItem[]>([
     ]
   },
   { label: 'Pricing', to: '/pricing' },
-  { label: 'Contact', to: '/contact' }
+  {
+    label: 'Example',
+    to: '/example',
+    children: [
+      { label: 'Input', to: '/example/input' },
+    ]
+  }
 ])
 
 const toDropdownOptions = (children: MenuItem[] = []): DropdownOption[] =>
@@ -107,7 +113,6 @@ const navigateTo = (path: string) => {
   justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 1rem 2rem;
   gap: 2rem;
 }
 

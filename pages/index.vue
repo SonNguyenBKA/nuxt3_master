@@ -30,24 +30,6 @@ definePageMeta({
 </script>
 
 <style lang="scss">
-h1 {
-  color: #333;
-  margin-bottom: 1rem;
-}
-
-button {
-  margin: 0.5rem;
-  padding: 0.5rem 1rem;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #0056b3;
-}
 .text-test {
   @apply text-brand-primary dark:text-white text-body-bold;
 }
