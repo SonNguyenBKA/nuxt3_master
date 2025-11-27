@@ -29,7 +29,8 @@
 <script setup lang="ts">
 import type { FormRules } from 'naive-ui'
 import { useMessage } from 'naive-ui'
-const { createValidator, messageError, errorMessage } = useValidates()
+import { useFormValidator } from '@/composables/form/useValidates'
+const { createValidator, messageError, errorMessage } = useFormValidator()
 
 const message = useMessage()
 const formRef = ref()
