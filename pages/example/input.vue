@@ -1,5 +1,6 @@
 <template>
     <div class="example-input-page">
+        <p>Example</p>
         <n-card title="Common Input Form" size="large">
             <n-form ref="formRef" :model="form" :rules="formRules" label-placement="top">
                 <div class="form-grid">
